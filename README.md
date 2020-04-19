@@ -61,4 +61,19 @@ import_probability=0.001 # Probability of importing a new case, runs every time-
 
 
 
+# Limitations
+
+## Parallel implementation
+
+Implementation isn't ideal, has a lot of atomic operations and barriers. The algorithm itself might be able to be improved to `n*log(n)` rather than `n^2`.
+
+
+
+## Statistical
+
+I'm using random number generators for things like random walks, infection chances, chance of importing new cases. To make implementation easier I just give each thread its own random number generator with a different seed. This is not statistically sound, though it's probably fine for making _qualitative_ conclusions. If one wanted to do some kind of monte carlo use of this code however this would likely need to be addressed, for example through [skip-ahead](https://www.nag.co.uk/content/skipping-ahead-mersenne-twister-random-number-generator) 
+techniques.
+
+
+
 
