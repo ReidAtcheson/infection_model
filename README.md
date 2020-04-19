@@ -10,11 +10,21 @@ The code works as follows:
 3. If an infected person gets close to a susceptible person, there is a chance they spread infection to them
 4. iterate (2) and (3) until all steps complete
 
+
+## Visual Representation
 Visually this looks as follows:
 
 ![Step 1](images/0.svg "Step 1")
 ![Step 10](images/10.svg "Step 10")
 ![Step 40](images/40.svg "Step 40")
+
+
+
+# "Case per day" Plot
+
+![Cases per time-step](images/cases.svg "Cases per step")
+
+
 
 
 
@@ -59,6 +69,15 @@ import_probability=0.001 # Probability of importing a new case, runs every time-
 ```
 
 
+## Post-processing scripts
+
+There are some python files which can produce nice plots based on the output data. Just run the python scripts
+on the same paramter file after running the C++ code.
+
+```
+./main example.cfg
+python hist_plot.py example.cfg
+```
 
 
 # Limitations
