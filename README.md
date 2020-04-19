@@ -43,7 +43,7 @@ Then you can run it by supplying a parameter file
 ## Parameter file
 The parameter file has the same structure as the example given below
 
-```
+```python
 ninit=5 #number of initial infections to start simulation with
 output_nodes=True #If true it will output files for postprocessing by Python scripts
 max_print_nodes=1000 #Maximum number of output files to generate (files are generated for every time-step)
@@ -60,6 +60,8 @@ infection_radius=16.0 # The radius such that if a susceptible individual is this
 probability=0.40 # Probability that an infected individual can infect a susceptible individual if they are within the infectious radius
 import_probability=0.001 # Probability of importing a new case, runs every time-step.
 ```
+
+
 
 
 
