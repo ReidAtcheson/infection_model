@@ -13,10 +13,15 @@ The code works as follows:
 Visually this looks as follows:
 
 1st iteration
+
 ![Step 1](images/0.svg "Step 1")
+
 10th iteration
+
 ![Step 10](images/10.svg "Step 10")
+
 40th iteration
+
 ![Step 40](images/40.svg "Step 40")
 
 
