@@ -76,4 +76,6 @@ techniques.
 
 
 
+## I don't know what I'm doing
 
+I'm not an epidemiologist. This was just a curiosity to me. I wanted to play with different parameters in a toy infection model to see what happens.
